@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV html js css</title>
+    <link rel="icon" type="imagen/ico" href="img/Argentinap2.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/perfil.css"/>
+    <link rel="stylesheet" href="css/skill.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="obsenver-root-margin"></div>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="img/Argentinap2.png"
+            alt="Argentina programar"
+          />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#profile" class="select">Perfil</a></li>
+          <li><a href="#skills"  >Habilidades</a></li>
+          <li><a href="#contact" >Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="profile horizontal-padding vertical-padding" id="profile">
+      <div class="profile-detail">
+        <div class="user-photo">
+      <img class="photo" src="img/img-perfil1.jpg" alt="foto de perfil" >
+        </div>
+        <div class="user-detail">
+      <p class="details" id="user-title">Hola, soy estudiante apacionado por la Fisica y la Programacion, mi nombre es  </p>
+      <p class="details" id="user-value"> Martin A. Eduardo </p>
+        </div>
+      </div>
+      <ul class="lista-de-botones" id="values_list">
+        <li><button type="button" class="bto-data" onclick= "changeText()" ><img src="img/user.svg" alt="nombre" ></button></li>
+        <li> <button type="button" class="bto-data" onclick= "changeText1()"><img src="img/mail.svg" alt="mail" > </button> </li>
+        <li> <button type="button" class="bto-data" onclick= "changeText2()"><img src="img/gift.svg" alt="cumpleaños" > </button> </li>
+        <li> <button type="button" class="bto-data" onclick= "changeText3()"><img src="img/map-pin.svg" alt="direccion" > </button> </li>
+        <li> <button type="button" class="bto-data" onclick= "changeText4()"><img src="img/phone.svg" alt="telefono" > </button> </li>
+      </ul>
+    </section>
+    <section class="skills horizontal-padding vertical-padding" id="skills">
+    <h2 class="skills-title">Habilidades</h2>
+    <ul class="skills-list">
+      <li class="skills-skill">CSS </li>
+      <li class="skills-skill">HTML </li>
+      <li class="skills-skill">JAVASCRIPT </li>
+    </ul>
+    </section>
+    <section class="contact horizontal-padding vertical-padding" id="contact">
+<h2 class="cont-title">Contacto</h2>
+<div class="cont-details">
+<div class="cont-details-group">
+  <p class="cont-label">Direccion</p>
+  <p class="cont-text">Belgrano 583-El Manantial</p>
+</div>
+<div class="cont-details-group">
+  <p class="cont-label">Email</p>
+  <p class="cont-text">edukpo01@gmail.com</p>
+</div>
+<div class="cont-details-group">
+  <p class="cont-label"></p>
+  <p class="cont-text">Deje su mensaje y con gosto le respondere</p>
+</div>
+</div>
+<form  class="cont-form">
+  <div class="cont-form-group">
+    <label for="name">Nombre</label>
+    <input required type="text" name="name" id="name"/>
+  </div>
+  <div class="cont-form-group">
+    <label for="mail">Email</label>
+    <input required type="email" name="mail" id="mail"/>
+  </div>
+  <div class="cont-form-group">
+    <label for="message">Nombre</label>
+    <textarea name="message" id="message" rows="6"></textarea>
+  </div>
+  <button type="submit" class="cont-form-submit">Enviar</button> 
+</form>
+<nav class="social">
+  <ul class="cont-social-list">
+    <li>
+      <a href="https://twitter.com/MartnngelEduar2"></a>
+      <img src="img/twitter.svg" alt="perfil de twitter" />
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/eduardo-mart%C3%ADn-134633124/"></a>
+      <img src="img/linkedin.svg" alt="perfil de linked" />
+    </li>
+    <li>
+      <a href="https://www.instagram.com/edukawaiii/"></a>
+      <img src="img/instagram.svg" alt="perfil de instagram" />
+    </li>
+  </ul>
+</nav>
+    </section>
+  </body>
+</html>
